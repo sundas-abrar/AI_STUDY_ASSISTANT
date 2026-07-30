@@ -1,69 +1,102 @@
 # 🤖 AI Study Assistant
 
-An AI-powered Study Assistant built using **Python**, **Streamlit**, and **Groq API**.
-
-The application allows users to:
-
-- 💬 Chat with an AI assistant
-- 📊 Upload Excel datasets
-- 📈 View dataset statistics
-- 🤖 Ask AI questions about uploaded datasets
-- 💾 Export chat history
+An AI-powered Study Assistant built with **Streamlit**, **Groq LLM**, and **Pandas**. This application allows users to upload Excel datasets, chat with an AI assistant, analyze uploaded data, maintain conversation history, and export chat conversations.
 
 ---
 
-## Features
+## ✨ Features
 
-- AI Chat using Groq API
-- Conversation Memory
-- Excel Dataset Upload
-- Dataset Preview
-- Missing Value Detection
-- Statistical Summary
-- AI Dataset Analysis
-- Download Chat History
+- 🤖 AI-powered chatbot using Groq API
+- 📊 Upload and analyze Excel (.xlsx) datasets
+- 💬 Conversation memory
+- 📈 Dataset preview and statistics
+- 📋 Display dataset columns
+- ⚠️ Missing value analysis
+- 📑 Dataset summary
+- 📥 Export chat history
+- 🎨 Clean Streamlit interface
 
 ---
 
-## Technologies Used
+## 📁 Project Structure
+
+```
+AI_STUDY_ASSISTANT/
+│
+├── assets/
+│   ├── ai_dataset_answer.png
+│   ├── chat_download.png
+│   ├── dataset_upload.png
+│   └── home_page.png
+│
+├── config/
+│   └── settings.py
+│
+├── services/
+│   ├── data_assistant.py
+│   ├── dataset_loader.py
+│   ├── export_chat.py
+│   ├── llm.py
+│   └── memory.py
+│
+├── .env
+├── .env.example
+├── .gitignore
+├── app.py
+├── README.md
+└── requirements.txt
+```
+
+---
+
+## 🛠️ Technologies Used
 
 - Python
 - Streamlit
 - Groq API
 - Pandas
 - OpenPyXL
-- Python-dotenv
+- python-dotenv
+- Tiktoken
 
 ---
 
-## Installation
+## 🚀 Installation
 
-Clone the repository:
-
-```bash
-git clone https://github.com/yourusername/AI_STUDY_ASSISTANT.git
-```
-
-Go to project folder:
+### 1. Clone the repository
 
 ```bash
+git clone https://github.com/sundas-abrar/AI_STUDY_ASSISTANT.git
 cd AI_STUDY_ASSISTANT
 ```
 
-Install requirements:
+### 2. Create a virtual environment
+
+```bash
+python -m venv venv
+```
+
+### 3. Activate the virtual environment
+
+**Windows**
+
+```bash
+venv\Scripts\activate
+```
+
+### 4. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Create a `.env` file:
+### 5. Create a `.env` file
 
-```
-GROQ_API_KEY=your_api_key_here
-MODEL_NAME=llama-3.1-8b-instant
+```env
+GROQ_API_KEY=your_groq_api_key_here
 ```
 
-Run the app:
+### 6. Run the application
 
 ```bash
 streamlit run app.py
@@ -71,49 +104,53 @@ streamlit run app.py
 
 ---
 
-## Screenshots
+## 📷 Application Preview
 
-### Home Page
+### 🏠 Home Page
 
-![Home](assets/home_page.png)
-
----
-
-### Upload Dataset
-
-![Dataset](assets/dataset_upload.png)
+![Home Page](assets/home_page.png)
 
 ---
 
-### AI Answer
+### 📤 Upload Dataset
 
-![Answer](assets/ai_dataset_answer.png)
-
----
-
-### Download Chat
-
-![Download](assets/chat_download.png)
+![Dataset Upload](assets/dataset_upload.png)
 
 ---
 
-## Project Structure
+### 🤖 AI Answer Using Uploaded Dataset
+
+![AI Dataset Answer](assets/ai_dataset_answer.png)
+
+---
+
+### 📥 Export Chat
+
+![Chat Download](assets/chat_download.png)
+
+---
+
+## 📦 Requirements
 
 ```
-AI_STUDY_ASSISTANT/
-│
-├── assets/
-├── config/
-├── data/
-├── services/
-├── app.py
-├── requirements.txt
-├── README.md
-└── .env
+streamlit>=1.47.0
+groq>=0.31.0
+pandas>=2.3.0
+openpyxl>=3.1.5
+python-dotenv>=1.1.1
+tiktoken>=0.10.0
 ```
 
 ---
 
-## Author
+## 👩‍💻 Author
 
-Sundas Abrar
+**Sundas Abrar**
+
+GitHub: https://github.com/sundas-abrar
+
+---
+
+## 📄 License
+
+This project is created for educational purposes.
