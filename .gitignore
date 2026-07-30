@@ -1,25 +1,4 @@
-# Virtual Environment
-venv/
-.venv/
-
-# Python Cache
 __pycache__/
 *.pyc
-
-# Environment Variables
 .env
-
-# VS Code
-.vscode/
-
-# macOS
-.DS_Store
-
-# Logs
-*.log
-
-# Streamlit Cache
 .streamlit/
-
-# Pytest
-.pytest_cache/

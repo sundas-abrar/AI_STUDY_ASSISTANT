@@ -45,4 +45,8 @@ Dataset Information:
             return completion.choices[0].message.content
 
         except Exception as e:
-            return f"Error: {e}"
+            return (
+    "⚠️ Sorry, something went wrong while "
+    "contacting the AI model.\n\n"
+    f"Details:\n{e}"
+)

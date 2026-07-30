@@ -1,85 +1,69 @@
 # 🤖 AI Study Assistant
 
-A professional AI Study Assistant built using **Python**, **Streamlit**, **Groq LLM**, and **Pandas**. This application allows users to chat with an AI assistant, upload Excel datasets, analyze data, and maintain conversation memory during the session.
+An AI-powered Study Assistant built using **Python**, **Streamlit**, and **Groq API**.
+
+The application allows users to:
+
+- 💬 Chat with an AI assistant
+- 📊 Upload Excel datasets
+- 📈 View dataset statistics
+- 🤖 Ask AI questions about uploaded datasets
+- 💾 Export chat history
 
 ---
 
-## 📌 Features
+## Features
 
-- 🤖 AI Chatbot using Groq LLM
-- 🧠 Conversation Memory
-- 📊 Upload Excel (.xlsx) Datasets
-- 📋 Dataset Preview
-- 📈 Dataset Statistics
-- ❓ Missing Value Analysis
-- 💬 AI-powered Dataset Question Answering
-- 📥 Download Chat History
-- 🏗️ Modular Python Architecture
+- AI Chat using Groq API
+- Conversation Memory
+- Excel Dataset Upload
+- Dataset Preview
+- Missing Value Detection
+- Statistical Summary
+- AI Dataset Analysis
+- Download Chat History
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 
-- Python 3
+- Python
 - Streamlit
 - Groq API
 - Pandas
 - OpenPyXL
-- Python Dotenv
+- Python-dotenv
 
 ---
 
-## 📂 Project Structure
+## Installation
 
-```
-AI_STUDY_ASSISTANT/
-│
-├── app.py
-├── requirements.txt
-├── README.md
-├── .gitignore
-├── .env.example
-│
-├── config/
-│   └── settings.py
-│
-├── services/
-│   ├── llm.py
-│   ├── memory.py
-│   ├── dataset_loader.py
-│   ├── data_assistant.py
-│   └── export_chat.py
-│
-├── data/
-└── assets/
-```
-
----
-
-## 🚀 Installation
-
-### Clone the repository
+Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/yourusername/AI_STUDY_ASSISTANT.git
 ```
 
-### Install dependencies
+Go to project folder:
+
+```bash
+cd AI_STUDY_ASSISTANT
+```
+
+Install requirements:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Add your API Key
-
 Create a `.env` file:
 
-```env
-GROQ_API_KEY=your_groq_api_key_here
-MODEL_NAME=llama-3.3-70b-versatile
+```
+GROQ_API_KEY=your_api_key_here
+MODEL_NAME=llama-3.1-8b-instant
 ```
 
-### Run the application
+Run the app:
 
 ```bash
 streamlit run app.py
@@ -87,36 +71,49 @@ streamlit run app.py
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
-Add screenshots of:
-
-- Home Screen
-- Dataset Upload
-- Dataset Preview
-- AI Chat
-- Dataset Analysis
-
-inside the `assets/` folder.
-## Home Page
+### Home Page
 
 ![Home](assets/home_page.png)
 
-## Upload Dataset
+---
 
-![Upload](assets/dataset_upload.png)
+### Upload Dataset
 
-## AI Answer
+![Dataset](assets/dataset_upload.png)
+
+---
+
+### AI Answer
 
 ![Answer](assets/ai_dataset_answer.png)
 
-## Download Chat
-
-![Download](assets/chat_download.png)
 ---
 
-## 👩‍💻 Author
+### Download Chat
 
-**Sundas Abrar**
+![Download](assets/chat_download.png)
 
-Bachelor of Science in Computer Science
+---
+
+## Project Structure
+
+```
+AI_STUDY_ASSISTANT/
+│
+├── assets/
+├── config/
+├── data/
+├── services/
+├── app.py
+├── requirements.txt
+├── README.md
+└── .env
+```
+
+---
+
+## Author
+
+Sundas Abrar
