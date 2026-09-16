@@ -2,7 +2,7 @@ from groq import Groq
 
 from config.settings import (
     GROQ_API_KEY,
-    MODEL_NAME,
+    GROQ_MODEL,
     TEMPERATURE
 )
 
@@ -37,7 +37,7 @@ Dataset Information:
                 final_messages = messages
 
             completion = self.client.chat.completions.create(
-                model=MODEL_NAME,
+                model=GROQ_MODEL,
                 temperature=TEMPERATURE,
                 messages=final_messages
             )

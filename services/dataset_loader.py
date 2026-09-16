@@ -11,10 +11,15 @@ class DatasetLoader:
         if uploaded_file is None:
             return None
 
-        self.df = pd.read_excel(
-            uploaded_file,
-            engine="openpyxl"
-        )
+        filename = uploaded_file.name.lower()
+
+        if filename.endswith(".csv"):
+            self.df = pd.read_csv(uploaded_file)
+        else:
+            self.df = pd.read_excel(
+                uploaded_file,
+                engine="openpyxl"
+            )
 
         return self.df
 
